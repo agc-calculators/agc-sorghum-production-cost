@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-sorghum-production-cost",
+      "dependencies": [],
+      "componentClass": "AgcSorghumProductionCost",
+      "componentPath": "components/agc-sorghum-production-cost/agc-sorghum-production-cost.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sorghum-production-cost-inputs",
+      "dependencies": [],
+      "componentClass": "AgcSorghumProductionCostInputs",
+      "componentPath": "components/agc-sorghum-production-cost-inputs/agc-sorghum-production-cost-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sorghum-production-cost-progress",
+      "dependencies": [],
+      "componentClass": "AgcSorghumProductionCostProgress",
+      "componentPath": "components/agc-sorghum-production-cost-progress/agc-sorghum-production-cost-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sorghum-production-cost-results",
+      "dependencies": [],
+      "componentClass": "AgcSorghumProductionCostResults",
+      "componentPath": "components/agc-sorghum-production-cost-results/agc-sorghum-production-cost-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sorghum-production-cost-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcSorghumProductionCostResultsPlaceholder",
+      "componentPath": "components/agc-sorghum-production-cost-results-placeholder/agc-sorghum-production-cost-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
